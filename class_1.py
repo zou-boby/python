@@ -5,5 +5,7 @@ print(c)
 d=a//b
 print(d)
 print(a==b)
-
+print(a!=b)
+print(a>b)
+print(a<b)
 
