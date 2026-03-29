@@ -1,14 +1,14 @@
 # 列表 --- 数组
 
-list=["张三", "里斯", "王五"]
-print(list)
+list1=["张三", "里斯", "王五"]
+print(list1)
 
-list.append("abc")
-# print(list.pop(2))
-print(list.pop(1))
-print(list)
-list[0]="张三李四"
-print(list)
+list1.append("abc")
+# print(list1.pop(2))
+print(list1.pop(1))
+print(list1)
+list1[0]="张三李四"
+print(list1)
 
 ls=[
     ['aa','bb','cc'],
@@ -26,3 +26,36 @@ print(d4)
 d4['name']='fw'
 print(d4)
 print(len(d4))
+
+
+#score=int( input("输入分数：\n") )
+score=80
+if score>=90:
+    print("A")
+elif score>=80:
+    print("B")
+elif score>=70:
+    print("C")
+elif score>=60:
+    print("D")
+else:
+    print("E")
+
+
+
+names=['Michael', 'Bob', 'Tracy']
+for name in names:
+    print(name)
+print('Bob' in names)
+sum=0
+for num in range(10):
+    sum+=num
+print(sum)
+
+print(list(range(6)))
+
+sum=0;i=1
+while(i<100):
+    sum+=i
+    i+=1
+print(sum)
