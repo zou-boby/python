@@ -110,12 +110,20 @@
 ## 控制语句
 
 ### 选择语句
-  if elif else
+  ```同级代码的缩进要保持一致```
+  - if  elif else
+  - match case    ``相当于switch case``
+      >```match x:
+      >   case 1:
+      >   case 2:
+      >   case _: 匹配其他情况
+      >```
 ### 循环语句
 - for n in num: 
   - range(1,100,2) 从1开始到100每隔2位 
 - while(m<100):
 - break 
+  - *在循环语句使用break时，可以和else连用，表示如果没有执行break，那么就会执行else中的内容*
 - continue 
 - pass(不执行任何操作)
 
