@@ -4,6 +4,7 @@ content:
 2. match 相当于switch case
 3. 循环语句
     while
+    for
 """
 import math
 
@@ -80,8 +81,15 @@ print(primeNum(-1))
 
 
 # 九九乘法表
-for i in range(1, 10):
-    for j in range(1, i+1):
-        print("%d x %d = %d\t" % (j, i, i * j), end='')
-    print("\n")
+# for i in range(1, 10):
+#     for j in range(1, i+1):
+#         print("%d x %d = %d\t" % (j, i, i * j), end='')
+#     print("\n")
 
+# 输出问题
+
+import time
+for i in range(5):
+    print(i, end='')   # 没有 flush，可能等循环结束后一次性输出 "01234"
+    print(i, end='', flush=True)
+    time.sleep(1)      # 每个数字延迟1秒，但终端可能一直没显示，最后突然全出来
