@@ -359,3 +359,24 @@
   - ``from abc import ABC, abstractmethod`` 先引入抽象类
   - 需要定义类继承自抽象类ABC
   - 需要定义抽象方法，用abstractmethod装饰器装饰
+## 内存分析
+> 在python中，各种类型的值都是存放在堆中，对于变量即索引：一般局部变量存放在栈【函数调用栈】，而全局变量存放在堆中
+### list
+![img.png](img.png)
+### 变量
+![img_1.png](img_1.png)
+### 类
+![img_2.png](img_2.png)
+
+
+## 函数进阶 ``lesson15``
+
+1. 函数也是对象![img_3.png](img_3.png)
+   - 函数是function类的实例化对象
+
+2. 函数可以赋值给变量以及可以添加属性 ![img_5.png](img_5.png)
+3. 可变参数和不可变参数
+   - 不可变参数![img_4.png](img_4.png)
+   - 可变参数![img_6.png](img_6.png)
+4. 函数可以作为参数或者返回值
+
