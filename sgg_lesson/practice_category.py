@@ -41,7 +41,7 @@ class Student(Person):
         #     return f'学号：{self.stuId}-姓名：{self.name}-年龄：{self.age}-性别：{self.gender}-分数：{self.scores}'
         # else:
         #     return f'学号：{self.stuId}-姓名：{self.name}-年龄：{self.age}-性别：{self.gender}'
-        score_part = f'-分数：{self.scores}' if self.scores else ''
+        score_part = f'-分数：{self.scores}' if self.scores else '' # 条件表达式 / 三目运算
         return f'学号：{self.stuId}-姓名：{self.name}-年龄：{self.age}-性别：{self.gender}{score_part}'
 class Manager:
     stuList = []
@@ -94,7 +94,8 @@ class Manager:
                 case 1:
                     info = input('请输入要添加的学生信息:姓名-年龄-性别[;语文-50,数学-89]')
                     info = info.replace('；', ';')
-                    info_1, *scores = info.split(';') # *scores会使得scores解包出来是 []类型，所以需要 scores = scores[0]
+                    # info_1, *scores = info.split(';') # *scores会使得scores解包出来是 []类型，所以需要 scores = scores[0]
+                    info_1, _, scores = info.partition(';')
                     name, age, gender = info_1.split('-')
                     if scores:
                         scores = scores[0]
